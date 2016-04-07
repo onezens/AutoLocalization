@@ -12,6 +12,9 @@
 		6551255A1CB6B1B8009D2E17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655125581CB6B1B8009D2E17 /* Main.storyboard */; };
 		6551255C1CB6B1B8009D2E17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6551255B1CB6B1B8009D2E17 /* Assets.xcassets */; };
 		6551255F1CB6B1B8009D2E17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6551255D1CB6B1B8009D2E17 /* LaunchScreen.storyboard */; };
+		6551256B1CB6B447009D2E17 /* AutoGenStringsSB.py in Resources */ = {isa = PBXBuildFile; fileRef = 655125691CB6B447009D2E17 /* AutoGenStringsSB.py */; };
+		6551256C1CB6B447009D2E17 /* AutoGenStringsXIB.py in Resources */ = {isa = PBXBuildFile; fileRef = 6551256A1CB6B447009D2E17 /* AutoGenStringsXIB.py */; };
+		655125741CB6B4D2009D2E17 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 655125761CB6B4D2009D2E17 /* View.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,14 @@
 		6551255B1CB6B1B8009D2E17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6551255E1CB6B1B8009D2E17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		655125601CB6B1B8009D2E17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		655125691CB6B447009D2E17 /* AutoGenStringsSB.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = AutoGenStringsSB.py; sourceTree = "<group>"; };
+		6551256A1CB6B447009D2E17 /* AutoGenStringsXIB.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = AutoGenStringsXIB.py; sourceTree = "<group>"; };
+		655125701CB6B4C2009D2E17 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		655125711CB6B4C2009D2E17 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		655125751CB6B4D2009D2E17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/View.xib; sourceTree = "<group>"; };
+		655125781CB6B4D4009D2E17 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/View.strings; sourceTree = "<group>"; };
+		6551257A1CB6B4D5009D2E17 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/View.strings"; sourceTree = "<group>"; };
+		6551257C1CB6B4D9009D2E17 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +65,25 @@
 		655125531CB6B1B8009D2E17 /* AutoLocalization */ = {
 			isa = PBXGroup;
 			children = (
+				655125661CB6B41A009D2E17 /* RunScript */,
 				655125541CB6B1B8009D2E17 /* AppDelegate.swift */,
 				655125561CB6B1B8009D2E17 /* ViewController.swift */,
 				655125581CB6B1B8009D2E17 /* Main.storyboard */,
+				655125761CB6B4D2009D2E17 /* View.xib */,
 				6551255B1CB6B1B8009D2E17 /* Assets.xcassets */,
 				6551255D1CB6B1B8009D2E17 /* LaunchScreen.storyboard */,
 				655125601CB6B1B8009D2E17 /* Info.plist */,
 			);
 			path = AutoLocalization;
+			sourceTree = "<group>";
+		};
+		655125661CB6B41A009D2E17 /* RunScript */ = {
+			isa = PBXGroup;
+			children = (
+				655125691CB6B447009D2E17 /* AutoGenStringsSB.py */,
+				6551256A1CB6B447009D2E17 /* AutoGenStringsXIB.py */,
+			);
+			path = RunScript;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +96,8 @@
 				6551254D1CB6B1B8009D2E17 /* Sources */,
 				6551254E1CB6B1B8009D2E17 /* Frameworks */,
 				6551254F1CB6B1B8009D2E17 /* Resources */,
+				6551256E1CB6B46B009D2E17 /* ShellScript */,
+				6551256F1CB6B46D009D2E17 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -106,6 +130,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 655125481CB6B1B8009D2E17;
 			productRefGroup = 655125521CB6B1B8009D2E17 /* Products */;
@@ -124,11 +149,43 @@
 			files = (
 				6551255F1CB6B1B8009D2E17 /* LaunchScreen.storyboard in Resources */,
 				6551255C1CB6B1B8009D2E17 /* Assets.xcassets in Resources */,
+				6551256C1CB6B447009D2E17 /* AutoGenStringsXIB.py in Resources */,
+				6551256B1CB6B447009D2E17 /* AutoGenStringsSB.py in Resources */,
+				655125741CB6B4D2009D2E17 /* View.xib in Resources */,
 				6551255A1CB6B1B8009D2E17 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6551256E1CB6B46B009D2E17 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\npython ${SRCROOT}/${TARGET_NAME}/RunScript/AutoGenStringsSB.py ${SRCROOT}/${TARGET_NAME}";
+		};
+		6551256F1CB6B46D009D2E17 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\npython ${SRCROOT}/${TARGET_NAME}/RunScript/AutoGenStringsXIB.py ${SRCROOT}/${TARGET_NAME}";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6551254D1CB6B1B8009D2E17 /* Sources */ = {
@@ -147,6 +204,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				655125591CB6B1B8009D2E17 /* Base */,
+				655125701CB6B4C2009D2E17 /* zh-Hans */,
+				6551257C1CB6B4D9009D2E17 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -155,8 +214,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				6551255E1CB6B1B8009D2E17 /* Base */,
+				655125711CB6B4C2009D2E17 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		655125761CB6B4D2009D2E17 /* View.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				655125751CB6B4D2009D2E17 /* Base */,
+				655125781CB6B4D4009D2E17 /* en */,
+				6551257A1CB6B4D5009D2E17 /* zh-Hans */,
+			);
+			name = View.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -249,6 +319,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
 				INFOPLIST_FILE = AutoLocalization/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.wackosix.AutoLocalization;
@@ -260,6 +332,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
 				INFOPLIST_FILE = AutoLocalization/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.wackosix.AutoLocalization;
