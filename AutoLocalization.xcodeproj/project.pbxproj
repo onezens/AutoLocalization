@@ -97,7 +97,7 @@
 				6551254E1CB6B1B8009D2E17 /* Frameworks */,
 				6551254F1CB6B1B8009D2E17 /* Resources */,
 				6551256E1CB6B46B009D2E17 /* ShellScript */,
-				6551256F1CB6B46D009D2E17 /* ShellScript */,
+				6551256F1CB6B46D009D2E17 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -172,13 +172,14 @@
 			shellPath = /bin/sh;
 			shellScript = "#!/bin/bash\npython ${SRCROOT}/${TARGET_NAME}/RunScript/AutoGenStringsSB.py ${SRCROOT}/${TARGET_NAME}";
 		};
-		6551256F1CB6B46D009D2E17 /* ShellScript */ = {
+		6551256F1CB6B46D009D2E17 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
@@ -360,6 +361,7 @@
 				655125651CB6B1B8009D2E17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
