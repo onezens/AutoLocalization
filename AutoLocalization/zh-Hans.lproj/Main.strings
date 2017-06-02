@@ -1,7 +1,6 @@
 
-
 //##################################################################################
-//#           AutoGenStrings            2016-04-07 23:31:50
+//#           AutoGenStrings            2017-06-02 11:17:19
 //##################################################################################
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "Mfc-kT-kjH"; */
@@ -10,16 +9,15 @@
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "sqA-2m-eME"; */
 "sqA-2m-eME.normalTitle" = "Button";
 
-//##################################################################################
-//#           AutoGenStrings            2016-04-10 12:03:41
-//##################################################################################
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "lKJ-Ff-DYx"; */
+"lKJ-Ff-DYx.normalTitle" = "Button";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "7zA-EG-fp7"; */
 "7zA-EG-fp7.normalTitle" = "Button";
 
 //##################################################################################
-//#           AutoGenStrings            2016-04-10 12:05:52
+//#           AutoGenStrings            2017-06-02 11:18:54
 //##################################################################################
 
-/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "lKJ-Ff-DYx"; */
-"lKJ-Ff-DYx.normalTitle" = "Button";
+/* Class = "UILabel"; text = "Label"; ObjectID = "Lkh-tG-cBY"; */
+"Lkh-tG-cBY.text" = "文本";

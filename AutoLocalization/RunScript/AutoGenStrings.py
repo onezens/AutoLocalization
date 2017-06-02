@@ -2,26 +2,28 @@
 # encoding: utf-8
 
 """
-untitled.py
+AutoGenStrings.py
 
-Created by linyu on 2015-02-13.
-Copyright (c) 2015 __MyCompanyName__. All rights reserved.
+Created by wangzhen on 2017-06-02.
+Reference by linyu on 2015-02-13.
+Copyright (c) 2017 __MyCompanyName__. All rights reserved.
+
 """
 
-import imp 
-import sys 
+import imp
+import sys
 import os
 import glob
-import string  
-import re  
+import string
+import re
 import time
 
-imp.reload(sys) 
+imp.reload(sys)
 sys.setdefaultencoding('utf-8') #设置默认编码,只能是utf-8,下面\u4e00-\u9fa5要求的
 
-KSourceFile = 'Base.lproj/*.xib'
+KSourceFiles = ['Base.lproj/*.storyboard', 'Base.lproj/*.xib']
 
-KTargetFile = '*.lproj/*.strings'  
+KTargetFile = '*.lproj/*.strings'
 
 KGenerateStringsFile = 'TempfileOfStoryboardNew.strings'
 
@@ -79,7 +81,9 @@ def getAnotationOfString(string_txt,suffix):
 	return anotationString
 
 def compareWithFilePath(newStringPath,originalStringPath):
-	#read newStringfile 
+	print(newStringPath)
+	print(originalStringPath)
+	#read newStringfile
 	nspf=open(newStringPath,"r")
 	#newString_txt =  str(nspf.read(5000000)).decode("utf-16")
 	newString_txt =  decoder(str(nspf.read(5000000)))
@@ -95,7 +99,7 @@ def compareWithFilePath(newStringPath,originalStringPath):
 			rightvalue = linematchs[1]
 			newString_dic[leftvalue] = rightvalue
 			anotation_dic[leftvalue] = anotationString
-	#read originalStringfile 
+	#read originalStringfile
 	ospf=open(originalStringPath,"r")
 	originalString_txt =  decoder(str(ospf.read(5000000)))
 	ospf.close()
@@ -151,9 +155,8 @@ def generateStoryboardStringsfile(storyboard_path,tempstrings_path):
 	if os.system(cmdstring) == 0:
 		return 1
 
-def main():
-	filePath = sys.argv[1]
-	sourceFilePath = filePath + '/' + KSourceFile 
+def generateLocalizableFiles(filePath ,sourceFilePath):
+	print('------->  ' + sourceFilePath)
 	sourceFile_list = glob.glob(sourceFilePath)
 	if len(sourceFile_list) == 0:
 		print 'error dictionary,you should choose the dic upper the Base.lproj'
@@ -172,7 +175,7 @@ def main():
 			print '- - genstrings %s successfully'%sourcename
 			for targetPath in targetFile_list:
 				targetprefix = extractFilePrefix(targetPath)
-				targetname = extractFileName(targetPath) 
+				targetname = extractFileName(targetPath)
 				if cmp(sourceprefix,targetprefix) == 0:
 					print '- - dealing with %s'%targetPath
 					compareWithFilePath(tempFile_Path,targetPath)
@@ -181,9 +184,18 @@ def main():
 		else:
 			print '- - genstrings %s error'%sourcename
 
+def main():
+	print(sys.argv)
+	if len(sys.argv) == 1 :
+		filePath = '/Users/wangzhen/Desktop/Zhen/git/AutoLocalization/AutoLocalization'
+	else:
+		filePath = sys.argv[1]
+
+	for KSourceFile in KSourceFiles:
+		sourceFilePath = filePath + '/' + KSourceFile
+		generateLocalizableFiles(filePath, sourceFilePath)
 
 
 
 if __name__ == '__main__':
 	main()
-
