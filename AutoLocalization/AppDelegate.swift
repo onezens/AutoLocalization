@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  AutoLocalization
 //
-//  Created by WackoSix on 4/7/16.
-//  Copyright © 2016 www.wackosix.cn. All rights reserved.
+//  Created by wangzhen on 4/7/16.
+//  Copyright © 2016 www.onezen.cc. All rights reserved.
 //
 
 import UIKit

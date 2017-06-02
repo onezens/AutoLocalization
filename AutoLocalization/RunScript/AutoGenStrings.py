@@ -187,6 +187,7 @@ def generateLocalizableFiles(filePath ,sourceFilePath):
 def main():
 	print(sys.argv)
 	if len(sys.argv) == 1 :
+        #如果在终端运行，注意要修改自己需要国际化的项目文件夹的路径！
 		filePath = '/Users/wangzhen/Desktop/Zhen/git/AutoLocalization/AutoLocalization'
 	else:
 		filePath = sys.argv[1]

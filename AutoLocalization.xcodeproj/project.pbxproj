@@ -308,7 +308,7 @@
 				DEVELOPMENT_TEAM = J4N8RS9Y8V;
 				INFOPLIST_FILE = AutoLocalization/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.wackosix.AutoLocalization;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.onezens.AutoLocalization;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -323,7 +323,7 @@
 				DEVELOPMENT_TEAM = J4N8RS9Y8V;
 				INFOPLIST_FILE = AutoLocalization/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.wackosix.AutoLocalization;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.onezens.AutoLocalization;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
