@@ -1,8 +1,10 @@
 # AutoLocalization
-Auto Localization for xib and storyboard(xib和storyboard自动添加国际化)
 
+xib和storyboard自动国际化
 
-##脚本升级记录  
+[查看自动国际化脚本](https://github.com/onezens/AutoLocalization/blob/master/AutoLocalization/RunScript/AutoGenStrings.py)
+
+## 脚本升级记录  
  1. 2017.06.02 自动化脚本在原先作者的基础上进行修改，现在同一个文件，支持xib和storyboard的一次性国际化
  2. 2017.8.10 遍历项目根目录下所有xib、storyboard文件并且国际化
 
