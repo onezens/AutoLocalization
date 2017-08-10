@@ -1,0 +1,22 @@
+
+//##################################################################################
+//#           AutoGenStrings            2017-08-10 10:39:32
+//##################################################################################
+
+
+"8r2-nd-dKi.segmentTitles[0]" = "First";
+
+
+"8r2-nd-dKi.segmentTitles[1]" = "Second";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "YnM-lq-sb4"; */
+"YnM-lq-sb4.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "gSK-HJ-5lO"; */
+"gSK-HJ-5lO.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uwi-Wq-eqc"; */
+"uwi-Wq-eqc.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Doa-SK-J2W"; */
+"Doa-SK-J2W.normalTitle" = "Button";

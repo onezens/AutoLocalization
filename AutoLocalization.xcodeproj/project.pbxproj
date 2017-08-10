@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09D6FC0C1F3B23F400189A75 /* Dis.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D6FC0E1F3B23F400189A75 /* Dis.storyboard */; };
+		09D6FC121F3B244F00189A75 /* DisView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D6FC111F3B244F00189A75 /* DisView.xib */; };
+		09D6FC1D1F3B298B00189A75 /* me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D6FC1F1F3B298B00189A75 /* me.storyboard */; };
+		09D6FC241F3B299800189A75 /* icon.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D6FC261F3B299800189A75 /* icon.xib */; };
+		09D6FC3F1F3BFEC600189A75 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D6FC411F3BFEC600189A75 /* View.xib */; };
 		655125551CB6B1B8009D2E17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655125541CB6B1B8009D2E17 /* AppDelegate.swift */; };
 		655125571CB6B1B8009D2E17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655125561CB6B1B8009D2E17 /* ViewController.swift */; };
 		6551255A1CB6B1B8009D2E17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655125581CB6B1B8009D2E17 /* Main.storyboard */; };
@@ -17,6 +22,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09D6FC0D1F3B23F400189A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Dis.storyboard; sourceTree = "<group>"; };
+		09D6FC111F3B244F00189A75 /* DisView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisView.xib; sourceTree = "<group>"; };
+		09D6FC141F3B24AE00189A75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Dis.strings; sourceTree = "<group>"; };
+		09D6FC161F3B24B000189A75 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Dis.strings"; sourceTree = "<group>"; };
+		09D6FC1E1F3B298B00189A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/me.storyboard; sourceTree = "<group>"; };
+		09D6FC211F3B299200189A75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/me.strings; sourceTree = "<group>"; };
+		09D6FC231F3B299400189A75 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/me.strings"; sourceTree = "<group>"; };
+		09D6FC251F3B299800189A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/icon.xib; sourceTree = "<group>"; };
+		09D6FC281F3B299B00189A75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/icon.strings; sourceTree = "<group>"; };
+		09D6FC2A1F3B299B00189A75 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/icon.strings"; sourceTree = "<group>"; };
+		09D6FC401F3BFEC600189A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/View.xib; sourceTree = "<group>"; };
+		09D6FC431F3BFEC800189A75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/View.strings; sourceTree = "<group>"; };
+		09D6FC451F3BFEC900189A75 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/View.strings"; sourceTree = "<group>"; };
 		655125511CB6B1B8009D2E17 /* AutoLocalization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLocalization.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		655125541CB6B1B8009D2E17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		655125561CB6B1B8009D2E17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +62,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09D6FBFF1F3B23C600189A75 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				09D6FC001F3B23C600189A75 /* Discovery */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		09D6FC001F3B23C600189A75 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				09D6FC0E1F3B23F400189A75 /* Dis.storyboard */,
+				09D6FC111F3B244F00189A75 /* DisView.xib */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		09D6FC171F3B292F00189A75 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				09D6FC181F3B292F00189A75 /* Setting */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		09D6FC181F3B292F00189A75 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				09D6FC1F1F3B298B00189A75 /* me.storyboard */,
+				09D6FC261F3B299800189A75 /* icon.xib */,
+				09D6FC411F3BFEC600189A75 /* View.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		655125481CB6B1B8009D2E17 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +116,8 @@
 		655125531CB6B1B8009D2E17 /* AutoLocalization */ = {
 			isa = PBXGroup;
 			children = (
+				09D6FC171F3B292F00189A75 /* Profile */,
+				09D6FBFF1F3B23C600189A75 /* Home */,
 				655125661CB6B41A009D2E17 /* RunScript */,
 				655125541CB6B1B8009D2E17 /* AppDelegate.swift */,
 				655125561CB6B1B8009D2E17 /* ViewController.swift */,
@@ -148,8 +203,13 @@
 				6551255F1CB6B1B8009D2E17 /* LaunchScreen.storyboard in Resources */,
 				6551255C1CB6B1B8009D2E17 /* Assets.xcassets in Resources */,
 				655125741CB6B4D2009D2E17 /* View.xib in Resources */,
+				09D6FC121F3B244F00189A75 /* DisView.xib in Resources */,
 				6551255A1CB6B1B8009D2E17 /* Main.storyboard in Resources */,
 				D75244461EE10FBE007050E6 /* AutoGenStrings.py in Resources */,
+				09D6FC3F1F3BFEC600189A75 /* View.xib in Resources */,
+				09D6FC241F3B299800189A75 /* icon.xib in Resources */,
+				09D6FC1D1F3B298B00189A75 /* me.storyboard in Resources */,
+				09D6FC0C1F3B23F400189A75 /* Dis.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +244,46 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		09D6FC0E1F3B23F400189A75 /* Dis.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09D6FC0D1F3B23F400189A75 /* Base */,
+				09D6FC141F3B24AE00189A75 /* en */,
+				09D6FC161F3B24B000189A75 /* zh-Hans */,
+			);
+			name = Dis.storyboard;
+			sourceTree = "<group>";
+		};
+		09D6FC1F1F3B298B00189A75 /* me.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09D6FC1E1F3B298B00189A75 /* Base */,
+				09D6FC211F3B299200189A75 /* en */,
+				09D6FC231F3B299400189A75 /* zh-Hans */,
+			);
+			name = me.storyboard;
+			sourceTree = "<group>";
+		};
+		09D6FC261F3B299800189A75 /* icon.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09D6FC251F3B299800189A75 /* Base */,
+				09D6FC281F3B299B00189A75 /* en */,
+				09D6FC2A1F3B299B00189A75 /* zh-Hans */,
+			);
+			name = icon.xib;
+			sourceTree = "<group>";
+		};
+		09D6FC411F3BFEC600189A75 /* View.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09D6FC401F3BFEC600189A75 /* Base */,
+				09D6FC431F3BFEC800189A75 /* en */,
+				09D6FC451F3BFEC900189A75 /* zh-Hans */,
+			);
+			name = View.xib;
+			sourceTree = "<group>";
+		};
 		655125581CB6B1B8009D2E17 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

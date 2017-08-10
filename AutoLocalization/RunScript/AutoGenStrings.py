@@ -3,9 +3,8 @@
 
 """
 AutoGenStrings.py
-
-Created by wangzhen on 2017-06-02.
-Reference by linyu on 2015-02-13.
+Created by linyu on 2015-02-13.
+Modify by wz on 2017-06-02.
 Copyright (c) 2017 __MyCompanyName__. All rights reserved.
 
 """
@@ -20,8 +19,6 @@ import time
 
 imp.reload(sys)
 sys.setdefaultencoding('utf-8') #设置默认编码,只能是utf-8,下面\u4e00-\u9fa5要求的
-
-KSourceFiles = ['Base.lproj/*.storyboard', 'Base.lproj/*.xib']
 
 KTargetFile = '*.lproj/*.strings'
 
@@ -156,7 +153,7 @@ def generateStoryboardStringsfile(storyboard_path,tempstrings_path):
 		return 1
 
 def generateLocalizableFiles(filePath ,sourceFilePath):
-	print('------->  ' + sourceFilePath)
+	print ('------->  sourceFilePath: ' + sourceFilePath + '  filePath: ' + filePath)
 	sourceFile_list = glob.glob(sourceFilePath)
 	if len(sourceFile_list) == 0:
 		print 'error dictionary,you should choose the dic upper the Base.lproj'
@@ -184,17 +181,58 @@ def generateLocalizableFiles(filePath ,sourceFilePath):
 		else:
 			print '- - genstrings %s error'%sourcename
 
+
+
+#根据项目根目录遍历所有的xib和storyboard的文件路径
+def getAllNibSrcPathFor(dir):
+	sourceFilePaths = []
+	#三个参数：1.父目录 2.所有文件夹名字（不含路径） 3.所有文件名字
+	for parent,dirnames,filenames in os.walk(dir):
+		for filename in filenames: #输出文件信息
+			print filename
+			if (('.xib' in filename) | ('.storyboard' in filename)):
+				filePath = os.path.join(parent)
+				if filePath not in sourceFilePaths: 
+					sourceFilePaths.append(filePath)
+	#print sourceFilePaths
+	return sourceFilePaths
+
+
 def main():
 	print(sys.argv)
 	if len(sys.argv) == 1 :
         #如果在终端运行，注意要修改自己需要国际化的项目文件夹的路径！
-		filePath = '/Users/wangzhen/Desktop/Zhen/git/AutoLocalization/AutoLocalization'
+		filePath = '/Users/leaf/Documents/git/AutoLocalization/AutoLocalization'
 	else:
 		filePath = sys.argv[1]
 
-	for KSourceFile in KSourceFiles:
-		sourceFilePath = filePath + '/' + KSourceFile
-		generateLocalizableFiles(filePath, sourceFilePath)
+	sourceFilePaths = getAllNibSrcPathFor(filePath)
+
+	# *.storyboard 国际化
+	for sourceFilePath in sourceFilePaths: 
+		baseStrIdx = 0
+		try:
+			baseStrIdx = sourceFilePath.index('Base.lproj')
+		except Exception as e:
+			pass
+		else:
+			sourceFilePathName = sourceFilePath + '/*.storyboard'
+			upperFilePath = sourceFilePath[0:(baseStrIdx-1)]
+			#print upperFilePath
+			generateLocalizableFiles(upperFilePath, sourceFilePathName)
+	# *.xib 国际化
+	for sourceFilePath in sourceFilePaths: 
+		baseStrIdx = 0
+		try:
+			baseStrIdx = sourceFilePath.index('Base.lproj')
+		except Exception as e:
+			pass
+		else:
+			sourceFilePathName = sourceFilePath + '/*.xib'
+			upperFilePath = sourceFilePath[0:(baseStrIdx-1)]
+			#print upperFilePath
+			generateLocalizableFiles(upperFilePath, sourceFilePathName)
+
 
 
 

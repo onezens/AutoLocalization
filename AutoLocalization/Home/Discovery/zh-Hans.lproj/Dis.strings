@@ -1,12 +1,8 @@
 
 
-
 //##################################################################################
 //#           AutoGenStrings            2017-08-10 09:45:03
 //##################################################################################
 
-/* Class = "UILabel"; text = "Label"; ObjectID = "g6X-hB-Whc"; */
-"g6X-hB-Whc.text" = "Label";
-
-/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fT9-Bp-kiW"; */
-"fT9-Bp-kiW.normalTitle" = "Button";
+/* Class = "UILabel"; text = "Label"; ObjectID = "kOz-y7-QOz"; */
+"kOz-y7-QOz.text" = "Label";
