@@ -1,8 +1,10 @@
 # AutoLocalization
 
-xib和storyboard自动国际化
+xib和storyboard自动国际化，iOS开发者必备工具
 
 [查看自动国际化脚本](https://github.com/onezens/AutoLocalization/blob/master/AutoLocalization/RunScript/AutoGenStrings.py)
+
+**如果你在使用的时候，有任何问题，或者需要添加的新功能，请给我邮件，或者issues我**
 
 ## 脚本升级记录  
  
@@ -30,7 +32,7 @@ xib和storyboard自动国际化
 ## 注意
 文件路径中不能拥有空格，否则Xcode脚本会找不到文件的错误
 
-## 脚本来源
+## 引用(最初脚本来源)
 [http://www.cnblogs.com/levilinxi/p/4296712.html](http://www.cnblogs.com/levilinxi/p/4296712.html)
 
   
