@@ -16,10 +16,8 @@ xib和storyboard自动国际化，iOS开发者必备工具
   1. 将存放脚本文件的文件夹，导入脚本文件到项目的`根目录`
   2. 选择项目 -> targes -> Build Phases -> + -> New Run Script Phase
   3. 添加两个运行脚本，其中一个添加脚本`python ${SRCROOT}/${TARGET_NAME}/RunScript/AutoGenStrings.py ${SRCROOT}/${TARGET_NAME}`
-  4. Build Setting  ->  Deployment  -> Deployment Location / Deployment Postprocessing  -> Yes
-  5. 分别创建一个xib和storyboard，然后开启国际化后，添加控件，Command + B 后查看你的国际化文件
+  4. 分别创建一个xib和storyboard，然后开启国际化后，添加控件，Command + B 后查看你的国际化文件
   
-  ![](http://7xq8l3.com1.z0.glb.clouddn.com/AutoLocalization1.png)
   
   ![](http://upload-images.jianshu.io/upload_images/1216462-9f20ceca2e58bebb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
   
