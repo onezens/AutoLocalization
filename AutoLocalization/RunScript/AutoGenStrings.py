@@ -192,7 +192,7 @@ def getAllNibSrcPathFor(dir):
 			print filename
 			if (('.xib' in filename) | ('.storyboard' in filename)):
 				filePath = os.path.join(parent)
-				if filePath not in sourceFilePaths: 
+				if filePath not in sourceFilePaths:
 					sourceFilePaths.append(filePath)
 	#print sourceFilePaths
 	return sourceFilePaths
@@ -202,14 +202,16 @@ def main():
 	print(sys.argv)
 	if len(sys.argv) == 1 :
         #如果在终端运行，注意要修改自己需要国际化的项目文件夹的路径！
-		filePath = '/Users/leaf/Documents/git/AutoLocalization/AutoLocalization'
+		filePath = '/Users/wz/Documents/git/AutoLocalization/AutoLocalization/'
 	else:
 		filePath = sys.argv[1]
-
+	# if filePath == None or filePath == '':
+	# 	print('[Error] filePath can not None!')
+	# 	exit(1)
 	sourceFilePaths = getAllNibSrcPathFor(filePath)
 
 	# *.storyboard 国际化
-	for sourceFilePath in sourceFilePaths: 
+	for sourceFilePath in sourceFilePaths:
 		baseStrIdx = 0
 		try:
 			baseStrIdx = sourceFilePath.index('Base.lproj')
@@ -221,7 +223,7 @@ def main():
 			#print upperFilePath
 			generateLocalizableFiles(upperFilePath, sourceFilePathName)
 	# *.xib 国际化
-	for sourceFilePath in sourceFilePaths: 
+	for sourceFilePath in sourceFilePaths:
 		baseStrIdx = 0
 		try:
 			baseStrIdx = sourceFilePath.index('Base.lproj')
