@@ -1,20 +1,20 @@
 
 
 //##################################################################################
-//#           AutoGenStrings            2018-05-14 10:17:04
+//#           AutoGenStrings            2018-05-15 09:36:23
 //##################################################################################
 
-/* Class = "UILabel"; text = "Label"; ObjectID = "1CH-Bp-ZAa"; */
-"1CH-Bp-ZAa.text" = "Label";
 
-/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "KZl-PW-a1T"; */
-"KZl-PW-a1T.normalTitle" = "Button";
+"1CH-Bp-ZAa.text" = "【】（）(){}.,.,\\/，。'\";
 
-/* Class = "UILabel"; text = "Label"; ObjectID = "Wpx-Rq-qpT"; */
-"Wpx-Rq-qpT.text" = "Label";
 
-/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "dSJ-KG-Mx5"; */
-"dSJ-KG-Mx5.normalTitle" = "Button";
+"KZl-PW-a1T.normalTitle" = "(English)";
 
-/* Class = "UILabel"; text = "Label"; ObjectID = "SO9-O2-Hi8"; */
-"SO9-O2-Hi8.text" = "Label";
+/* Class = "UILabel"; text = "（中文括号）"; ObjectID = "Wpx-Rq-qpT"; */
+"Wpx-Rq-qpT.text" = "（中文括号）";
+
+
+"dSJ-KG-Mx5.normalTitle" = "(英文括号)";
+
+/* Class = "UILabel"; text = "（Chinese）"; ObjectID = "SO9-O2-Hi8"; */
+"SO9-O2-Hi8.text" = "（Chinese）";
