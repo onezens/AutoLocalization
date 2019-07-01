@@ -83,7 +83,7 @@ def compareWithFilePath(newStringPath,originalStringPath):
 	#read newStringfile
 	nspf=open(newStringPath,"r")
 	#newString_txt =  str(nspf.read(5000000)).decode("utf-16")
-	newString_txt =  decoder(str(nspf.read(5000000)))
+	newString_txt = decoder(str(nspf.read(5000000)))
 	nspf.close()
 	newString_dic = {}
 	anotation_dic = {}

@@ -10,7 +10,6 @@
 		09D6FC0C1F3B23F400189A75 /* Dis.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D6FC0E1F3B23F400189A75 /* Dis.storyboard */; };
 		09D6FC1D1F3B298B00189A75 /* me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D6FC1F1F3B298B00189A75 /* me.storyboard */; };
 		09D6FC241F3B299800189A75 /* icon.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D6FC261F3B299800189A75 /* icon.xib */; };
-		09D6FC3F1F3BFEC600189A75 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09D6FC411F3BFEC600189A75 /* View.xib */; };
 		359021A42004544700F1D840 /* DisView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 359021A62004544700F1D840 /* DisView.xib */; };
 		655125551CB6B1B8009D2E17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655125541CB6B1B8009D2E17 /* AppDelegate.swift */; };
 		655125571CB6B1B8009D2E17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655125561CB6B1B8009D2E17 /* ViewController.swift */; };
@@ -31,9 +30,6 @@
 		09D6FC251F3B299800189A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/icon.xib; sourceTree = "<group>"; };
 		09D6FC281F3B299B00189A75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/icon.strings; sourceTree = "<group>"; };
 		09D6FC2A1F3B299B00189A75 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/icon.strings"; sourceTree = "<group>"; };
-		09D6FC401F3BFEC600189A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/View.xib; sourceTree = "<group>"; };
-		09D6FC431F3BFEC800189A75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/View.strings; sourceTree = "<group>"; };
-		09D6FC451F3BFEC900189A75 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/View.strings"; sourceTree = "<group>"; };
 		359021A52004544700F1D840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/DisView.xib; sourceTree = "<group>"; };
 		359021A82004544D00F1D840 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DisView.strings; sourceTree = "<group>"; };
 		359021AA2004544E00F1D840 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/DisView.strings"; sourceTree = "<group>"; };
@@ -94,7 +90,6 @@
 			children = (
 				09D6FC1F1F3B298B00189A75 /* me.storyboard */,
 				09D6FC261F3B299800189A75 /* icon.xib */,
-				09D6FC411F3BFEC600189A75 /* View.xib */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -150,7 +145,7 @@
 				6551254D1CB6B1B8009D2E17 /* Sources */,
 				6551254E1CB6B1B8009D2E17 /* Frameworks */,
 				6551254F1CB6B1B8009D2E17 /* Resources */,
-				6551256E1CB6B46B009D2E17 /* ShellScript */,
+				6551256E1CB6B46B009D2E17 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -173,8 +168,9 @@
 				TargetAttributes = {
 					655125501CB6B1B8009D2E17 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 6QXR4W42GG;
+						DevelopmentTeam = 9SGZE8KEKC;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -183,6 +179,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				"zh-Hans",
@@ -208,7 +205,6 @@
 				359021A42004544700F1D840 /* DisView.xib in Resources */,
 				6551255A1CB6B1B8009D2E17 /* Main.storyboard in Resources */,
 				D75244461EE10FBE007050E6 /* AutoGenStrings.py in Resources */,
-				09D6FC3F1F3BFEC600189A75 /* View.xib in Resources */,
 				09D6FC241F3B299800189A75 /* icon.xib in Resources */,
 				09D6FC1D1F3B298B00189A75 /* me.storyboard in Resources */,
 				09D6FC0C1F3B23F400189A75 /* Dis.storyboard in Resources */,
@@ -218,18 +214,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6551256E1CB6B46B009D2E17 /* ShellScript */ = {
+		6551256E1CB6B46B009D2E17 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\npython ${SRCROOT}/${TARGET_NAME}/RunScript/AutoGenStrings.py ${SRCROOT}/${TARGET_NAME}";
+			shellScript = "#!/bin/bash\npython ${SRCROOT}/${TARGET_NAME}/RunScript/AutoGenStrings.py ${SRCROOT}/${TARGET_NAME}\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -275,16 +272,6 @@
 				09D6FC2A1F3B299B00189A75 /* zh-Hans */,
 			);
 			name = icon.xib;
-			sourceTree = "<group>";
-		};
-		09D6FC411F3BFEC600189A75 /* View.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				09D6FC401F3BFEC600189A75 /* Base */,
-				09D6FC431F3BFEC800189A75 /* en */,
-				09D6FC451F3BFEC900189A75 /* zh-Hans */,
-			);
-			name = View.xib;
 			sourceTree = "<group>";
 		};
 		359021A62004544700F1D840 /* DisView.xib */ = {
@@ -416,14 +403,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
 				DEPLOYMENT_LOCATION = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
-				DEVELOPMENT_TEAM = 6QXR4W42GG;
+				DEVELOPMENT_TEAM = 9SGZE8KEKC;
 				INFOPLIST_FILE = AutoLocalization/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.onezens.AutoLocalization;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "appdev-meitu-beijing";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -431,14 +420,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
 				DEPLOYMENT_LOCATION = NO;
 				DEPLOYMENT_POSTPROCESSING = NO;
-				DEVELOPMENT_TEAM = 6QXR4W42GG;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AutoLocalization/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.onezens.AutoLocalization;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
